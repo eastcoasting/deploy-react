@@ -13,8 +13,6 @@ import Accordion from "../accordion";
 import Layer from "./layer";
 import Legend from "./Legend";
 
-import siteSelection from '../Plot/Data/siteSelection.json'
-
 
 const styles = {
     width: "100vw",
@@ -238,10 +236,9 @@ export const MapboxGLMap = ({
 
             mapboxGlMap.addSource('siteSelection', {
                 type: 'geojson',
-                data: siteSelection
+                data: 'https://raw.githubusercontent.com/eastcoasting/reactright/maine/src/components/Home/Plot/Data/siteSelection.json'
             });
 
-            console.log(siteSelection)
 
 
 

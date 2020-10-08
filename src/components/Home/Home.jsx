@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {PlotlyBarComponent} from "./Plot/plot";
 import {MapboxGLMap} from "./Map/MapboxGLMap"
-import {  ECL_geo_data, color_breaks } from "./Plot/Data/data";
 
 
 export const Home = () => {
@@ -12,8 +11,6 @@ export const Home = () => {
     <div className="home">
       <div className="row">
           <MapboxGLMap
-          data={ECL_geo_data()}
-          colorBreaks={color_breaks()}
           highlightLineColor={{ rgba: [255, 102, 0, 1] }}
           coordinates={[-119.846, 43.862]}
           zoom={6}

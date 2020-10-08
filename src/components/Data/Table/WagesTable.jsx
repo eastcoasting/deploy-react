@@ -1,11 +1,6 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import {
     Container,
-    Card,
-    CardImg,
-    CardText,
-    CardBody,
-    CardTitle,
 } from 'reactstrap';
 import TableContainer from './TableContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
